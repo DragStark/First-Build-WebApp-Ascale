@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+}
+.menu {
+    flex: 4;
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+}
+.menu li {
+    padding: 0 10px;
+}
+.menu li a {
+    padding: 0 10px;
+    font-size: 18px;
+    display: block;
+    line-height: 35px;
+}
+.menu li:hover .sub-menu {
+    visibility: visible;
+    top: 70px;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    padding-left: 0;
+    visibility: hidden;
+    top: 80px;
+    transition: 0.1s;
+}
+.sub-menu li a{
+    font-size: 15px;
+}
+.menu li:hover .sub-menu {
+    visibility: visible;
+    top: 70px;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    padding-left: 0;
+    visibility: hidden;
+    top: 80px;
+    transition: 0.1s;
+}
+.iphone-sub-menu li a{
+    font-size: 15px;
+}
+.logo {
+    flex: 1;
+}
+.other {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    justify-content: right;
+}
+.other li {
+    padding: 20px 5px;
+    margin-left: 20px;
+}
+.search {
+    flex: 1;
+    margin-left: 0px;
+}
+.search input {
+    width: 120%;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 0;
+}
